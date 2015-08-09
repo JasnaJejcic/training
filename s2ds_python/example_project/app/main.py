@@ -3,8 +3,9 @@ import sqlalchemy.orm as orm
 
 import app.helpers.db as db
 import app.models.webdata as webdata
+import app.settings as settings
 
-engine = db.create_engine('localhost', 'training')
+engine = db.create_engine(settings.HOST, settings.schema)
 
 def create_tables():
     """Create all schema tables."""
