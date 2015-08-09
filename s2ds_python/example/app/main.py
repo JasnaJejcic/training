@@ -35,4 +35,3 @@ def fetch(url):
 
     data = app.fetch.fetch(url)
     q = session.query(webdata.WebData)
-    print q.all()
