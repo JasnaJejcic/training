@@ -1,9 +1,9 @@
 import requests
 import sqlalchemy.orm as orm
 
-import app.helpers.db as db
-import app.models.webdata as webdata
-import app.settings as settings
+import example.app.helpers.db as db
+import example.app.models.webdata as webdata
+import example.app.settings as settings
 
 engine = db.create_engine(settings.HOST, settings.schema)
 
