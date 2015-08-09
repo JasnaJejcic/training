@@ -1,19 +1,19 @@
 import requests
 import sqlalchemy.orm as orm
 
-import example.app.helpers.db as db
-import example.app.models.webdata as webdata
-import example.app.settings as settings
+import app.helpers.db as db
+import app.models.webdata as webdata
+import app.settings as settings
 
-engine = db.create_engine(settings.HOST, settings.schema)
+engine = db.create_engine(settings.HOST, settings.SCHEMA)
 
-def create_tables():
+def create():
     """Create all schema tables."""
 
     print "creating tables"
     res = webdata.Base.metadata.create_all(engine)
 
-def create_app():
+def fetch(url):
     """Create the application and session."""
 
     print "setting up application session"
