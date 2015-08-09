@@ -2,3 +2,4 @@
 *.html
 .ipynb_checkpoints/*
 s2ds_python/.ipynb_checkpoints/*
+*.pyc
