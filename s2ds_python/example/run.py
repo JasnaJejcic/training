@@ -19,4 +19,4 @@ if __name__ ==  "__main__":
     if args['create']:
         app.create()
     elif args['fetch']:
-        app.fetch(args['--url'])
+        app.fetch(args['<url>'])
