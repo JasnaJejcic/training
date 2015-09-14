@@ -1,0 +1,14 @@
+# Install node.js prerequisites (from within src)
+npm install
+
+# Create the lambda function
+aws lambda create-function --function-name levelup-alex --runtime nodejs --role arn:aws:iam::048965452656:role/lambda_basic_execution  --handler index.handler --zip-file fileb://build/func.zip
+
+# Invoke the lambda funciton
+aws lambda invoke --function-name levelup-alex --log-type Tail /dev/stdout --payload '{"number": 6}'
+
+# Update the lambda function code
+aws lambda update-function-code --function-name levelup-alex --zip-file fileb://build/func.zip
+
+# Decode the log data
+echo ... | base64 --decode
