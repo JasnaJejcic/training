@@ -3,3 +3,6 @@
 .ipynb_checkpoints/*
 s2ds_python/.ipynb_checkpoints/*
 *.pyc
+
+levelups/lambda/node_modules/*
+levelups/lambda/build/*.zip
