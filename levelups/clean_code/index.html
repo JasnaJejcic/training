@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Level Up - Clean Coding Practices</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/moon.css" id="theme">
+         <!--<link rel="stylesheet" href="./css/theme/league.css" id="theme">-->
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Clean Code</h1>
+					<h3>(a beginners guide)</h3>
+				</section>
+
+				<section>
+                    <h3>What is clean code?</h3>
+                    <img data-src="./assets/wtfs.jpg">
+				</section>
+
+				<section>
+                    <h3>Code that makes things easy</h3>
+                        <ul>
+                            <li>Easy to understand
+                            <li>Easy to modify/build upon
+                            <li>Easy to fix when things go wrong
+                        </ul>
+				</section>
+
+				<section>
+                    <blockquote>
+                        <!--<img data-src="./assets/small.jpg" style='float:right'>-->
+                        "You know you are working on clean code when each routine you
+                        read turns out to be pretty much what you expected."<br>
+                        Ward Cunningham
+                    </blockquote>
+                    </br>
+                    <blockquote>
+                        "Clean code always looks like it was written by someone
+                        who cares."<br>
+                        Michael Feathers
+                    </blockquote>
+				</section>
+
+				<section>
+                    <h3>Why bother?</h3>
+                    <blockquote>
+                        "Programming is the art of telling another human what 
+                        one wants the computer to do."</br>
+                        Donald Knuth
+                    </blockquote>
+                    <p>
+                        Clean code isn't for the computers, it's for us
+                    </p>
+				</section>
+
+				<section>
+                    <h3>Happy colleagues!</h3>
+                    <img src="./assets/happy_colleagues.jpeg">
+                    <!--<img src="./assets/happy_colleagues_2.jpg">-->
+                    <ul>
+                        <li>Help your future self and everyone else
+                        <li>Make work more enjoyable
+                        <li>Take pride in what we produce
+                    </ul>
+				</section>
+
+                <section>
+                    <h3>How do we achieve it?</h3>
+                    <img src="./assets/small_parts.gif" style='float:left' width='40%'>
+                    </br></br>
+                    <ul>
+                        <li>Ongoing process
+                        <li>Focus on small things
+                        <li>Naming
+                        <li>Functions
+                        <li>Formatting
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Naming</h1>
+                </section>
+
+				<section>
+                    <img src="./assets/willy.jpg" width="52%" style='float:left'>
+                    <br><br>
+                    <div>
+                        <ul>
+                            <li>Naming things is hard
+                            <li>Be expressive
+                            <li>Be consistent
+                            <li>Functions should be verbs
+                        </ul>
+                    </div>
+				</section>
+
+				<section>
+                    <img src="./assets/long_name.jpg" style='float:right' width="60%">
+                    <br>
+                    <div>
+                        <ul>
+                            <li>No unecessary crap
+                            <li>Use real words
+                            <li>Long and descriptive<br>
+                                better than short<br> 
+                                and cryptic
+                                <li>Don't be scared to<br>
+                                    rename anything
+                        </ul>
+                    </div>
+				</section>
+
+                <section>
+                    <h1>Functions</h1>
+                </section>
+
+                <section>
+                    <img data-src="./assets/small.jpg" style='float:left'>
+                    <br><br><br>
+                    <div>
+                        <ul>
+                            <li>As small as possible
+                            <li>As few arguments as possible
+                            <li>
+                                Don't repeat yourself:<br>
+                                <q>"Duplication may be the root<br>
+                                    of all evil in software"</q>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <img data-src="./assets/knife.jpg" style='float:right' width="50%">
+                    <br>
+                    <div>
+                        <ul>
+                            <li>Do one thing
+                            <li>No side effects
+                            <li>Operate at single level<br> of abstraction
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Formatting</h1>
+                </section>
+
+                <section>
+                    <img data-src="./assets/newspaper.jpg" style='float:left' width='50%'>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                        <ul>
+                            <li>Read top down
+                            <li>Things should be where<br>
+                                you expect them to be
+                            <li>Useful comments only
+                            <li>Stick to the style guide!
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Example - refactoring the red flag flow </h2>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
